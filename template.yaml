@@ -207,7 +207,7 @@ Resources:
               Ref: Cluster
             ServiceName:
               Ref: FargateService
-            FileName: images.json
+            #FileName: images.json
           InputArtifacts:
           - Name: BuildOutput
           RunOrder: 1
