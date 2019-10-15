@@ -269,7 +269,7 @@ Resources:
         Ref: TaskExecutionRole
       ContainerDefinitions:
       - Name: smerf
-        Image: nginx/nginx-ingress
+        Image: httpd
         Essential: true
         PortMappings:
         - ContainerPort: 8800
