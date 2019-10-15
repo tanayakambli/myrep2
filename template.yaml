@@ -207,7 +207,7 @@ Resources:
               Ref: Cluster
             ServiceName:
               Ref: FargateService
-            #FileName: images.json
+            FileName: images.json
           InputArtifacts:
           - Name: BuildOutput
           RunOrder: 1
@@ -269,7 +269,7 @@ Resources:
         Ref: TaskExecutionRole
       ContainerDefinitions:
       - Name: smerf
-        Image: httpd
+        Image: nginx
         Essential: true
         PortMappings:
         - ContainerPort: 8800
