@@ -269,7 +269,7 @@ Resources:
         Ref: TaskExecutionRole
       ContainerDefinitions:
       - Name: smerf
-        Image: 774640474711.dkr.ecr.eu-west-1.amazonaws.com/stack-repos-1mgqhquhid434
+        Image: amazon/amazon-ecs-sample
         Essential: true
         PortMappings:
         - ContainerPort: 8800
